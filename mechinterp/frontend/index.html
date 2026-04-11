@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MechInterp - Mechanistic Interpretability IDE</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <h1>MechInterp</h1>
+    <div class="subtitle">Mechanistic Interpretability IDE</div>
+    <div class="section">
+      <label for="prompt">Prompt</label>
+      <textarea id="prompt" placeholder="The Eiffel Tower is in"></textarea>
+      <button id="analyse-btn">Analyse</button>
+    </div>
+    <div class="section">
+      <h2>Activation Patching</h2>
+      <label for="corrupted-prompt">Corrupted Prompt</label>
+      <textarea id="corrupted-prompt" placeholder="The Colosseum is in"></textarea>
+      <button id="patch-btn">Patch Head</button>
+    </div>
+    <div class="section">
+      <h2>Circuit Discovery</h2>
+      <button id="circuit-btn">Discover Circuit</button>
+    </div>
+  </div>
+  <div class="main">
+    <div class="tabs">
+      <button class="tab active" data-tab="attention">Attention Heads</button>
+      <button class="tab" data-tab="logit">Logit Lens</button>
+      <button class="tab" data-tab="circuit">Circuit</button>
+    </div>
+    <div class="tab-content" id="attention-container"></div>
+    <div class="tab-content" id="logit-container" style="display:none"></div>
+    <div class="tab-content" id="circuit-container" style="display:none"></div>
+    <div id="loading-spinner" style="display:none">Loading...</div>
+    <div id="result-card"></div>
+  </div>
+  <script type="module" src="app.js"></script>
+  <script type="module" src="viz/attention_grid.js"></script>
+  <script type="module" src="viz/logit_lens.js"></script>
+  <script type="module" src="viz/circuit_graph.js"></script>
+</body>
+</html>

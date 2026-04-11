@@ -1,0 +1,7 @@
+transformer_lens
+torch
+torchvision
+fastapi
+uvicorn[standard]
+numpy
+python-dotenv
