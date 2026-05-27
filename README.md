@@ -17,7 +17,10 @@ Transformers learn by routing information through attention heads — but unders
 
 ## Demo
 
-> _Add a screenshot or GIF of the interface here_
+<img width="1904" height="992" alt="Screenshot 2026-05-27 155402" src="https://github.com/user-attachments/assets/4d0b426c-a526-401c-b527-3bf24a0dc0aa" />
+<img width="1919" height="992" alt="Screenshot 2026-05-27 155413" src="https://github.com/user-attachments/assets/7296589c-f2ce-404d-a101-dba76d32d8ac" />
+
+
 
 ---
 
