@@ -104,6 +104,3 @@ This project is rooted in **mechanistic interpretability** — the effort to rev
 
 ---
 
-## License
-
-MIT
